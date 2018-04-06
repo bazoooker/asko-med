@@ -1,0 +1,13 @@
+@mixin flex-col {
+    display: flex;
+    flex-flow: column nowrap;
+}
+@mixin flex-row {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+@mixin pseudo {
+	position: absolute;
+	content: '';
+}
