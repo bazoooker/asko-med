@@ -1,24 +1,25 @@
 .logo {
 	display: inline-block;
-	width: 272px;
-	height: 75px;
+	width: 27.2rem;
+	height: 100%;
 	
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
 
 	transition: 200ms;
+	background-image: url(/img/logo.png); 
+	background-size: 22.6rem;
 
 	&:hover {
 		opacity: .75;
 	}
 }
-	.logo_header { background-image: url(/img/logo.PNG); background-size: 272px;}
-	.logo_footer { background-image: url(/img/logo_white.PNG);}
+
 
 /* icon layout */
 
 .icon {
-	@include flex-row;
+	// @include flex-row(wrap, space-between, flex-start);
 	position: relative;
 	align-items: center;
 	justify-content: center;
@@ -29,7 +30,7 @@
 	transition: 150ms;
 }
 	.icon:after {
-		@include pseudo;
+		// @include pseudo;
 		width: 15px;
 		height: 15px;
 		background-size: 15px;

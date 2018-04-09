@@ -1,5 +1,5 @@
 .page-nav {
-	@include flex-row;
+	// @include flex-row(wrap, space-between, flex-start);
 	align-items: stretch;
 	justify-content: flex-start;
 

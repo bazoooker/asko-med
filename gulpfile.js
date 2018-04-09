@@ -2,7 +2,6 @@ var gulp      	    = require('gulp'), // Подключаем Gulp
     sass            = require('gulp-sass'), //Подключаем Sass пакет,
     browserSync     = require('browser-sync').create(); // Подключаем Browser Sync
     autoprefixer    = require('gulp-autoprefixer'); // Подключаем автопрефиксер
-    notify          = require("gulp-notify");
 
 
 
@@ -28,7 +27,6 @@ gulp.task('sass', function() {
             cascade: false
         }))
         .pipe(gulp.dest("distrib/css"))
-        .pipe(notify("Css injected!", 300))
         .pipe(browserSync.stream())
 });
 

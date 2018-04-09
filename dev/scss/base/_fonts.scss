@@ -1,51 +1,59 @@
 
+// light
 @font-face {
-    font-family: 'latoblack';
-    src: url('/fonts/Lato/lato-black.eot');
-    src: url('/fonts/Lato/lato-black.eot?#iefix') format('embedded-opentype'),
-         url('/fonts/Lato/lato-black.woff2') format('woff2'),
-         url('/fonts/Lato/lato-black.woff') format('woff'),
-         url('/fonts/Lato/lato-black.ttf') format('truetype');
-    font-weight: 900;
+    font-family: 'ProximaNova';
+    src: url('/fonts/ProximaNova/ProximaNova-Light.eot');
+    src: local('Proxima Nova Light'), local('ProximaNova-Light'),
+        url('/fonts/ProximaNova/ProximaNova-Light.woff') format('woff'),
+        url('/fonts/ProximaNova/ProximaNova-Light.ttf') format('truetype'),
+        url('/fonts/ProximaNova/ProximaNova-Light.eot?#iefix') format('embedded-opentype');
+    font-weight: 300;
     font-style: normal;
 }
+
+// regular
 @font-face {
-    font-family: 'latoheavy';
-    src: url('/fonts/Lato/lato-heavy.eot');
-    src: url('/fonts/Lato/lato-heavy.eot?#iefix') format('embedded-opentype'),
-         url('/fonts/Lato/lato-heavy.woff2') format('woff2'),
-         url('/fonts/Lato/lato-heavy.woff') format('woff'),
-         url('/fonts/Lato/lato-heavy.ttf') format('truetype');
+    font-family: 'ProximaNova';
+    src: url('/fonts/ProximaNova/ProximaNova-Regular.eot');
+    src: local('Proxima Nova Regular'), local('ProximaNova-Regular'),
+        url('/fonts/ProximaNova/ProximaNova-Regular.woff') format('woff'),
+        url('/fonts/ProximaNova/ProximaNova-Regular.ttf') format('truetype'),
+        url('/fonts/ProximaNova/ProximaNova-Regular.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+        // regular italic
+        @font-face {
+            font-family: 'ProximaNova';
+            src: url('/fonts/ProximaNova/ProximaNova-RegularIt.eot');
+            src: local('Proxima Nova Regular Italic'), local('ProximaNova-RegularIt'),
+                url('/fonts/ProximaNova/ProximaNova-RegularIt.woff') format('woff'),
+                url('/fonts/ProximaNova/ProximaNova-RegularIt.ttf') format('truetype'),
+                url('/fonts/ProximaNova/ProximaNova-RegularIt.eot?#iefix') format('embedded-opentype');
+            font-weight: normal;
+            font-style: italic;
+        }
+
+// bold
+@font-face {
+    font-family: 'ProximaNova';
+    src: url('/fonts/ProximaNova/ProximaNova-Bold.eot');
+    src: local('Proxima Nova Bold'), local('ProximaNova-Bold'),
+        url('/fonts/ProximaNova/ProximaNova-Bold.woff') format('woff'),
+        url('/fonts/ProximaNova/ProximaNova-Bold.ttf') format('truetype'),
+        url('/fonts/ProximaNova/ProximaNova-Bold.eot?#iefix') format('embedded-opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+// extrabold
+@font-face {
+    font-family: 'ProximaNova';
+    src: url('/fonts/ProximaNova/ProximaNova-Extrabld.eot');
+    src: local('Proxima Nova Extrabold'), local('ProximaNova-Extrabld'),
+        url('/fonts/ProximaNova/ProximaNova-Extrabld.woff') format('woff'),
+        url('/fonts/ProximaNova/ProximaNova-Extrabld.ttf') format('truetype'),
+        url('/fonts/ProximaNova/ProximaNova-Extrabld.eot?#iefix') format('embedded-opentype');
     font-weight: 800;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'latoitalic';
-    src: url('/fonts/Lato/lato-italic.eot');
-    src: url('/fonts/Lato/lato-italic.eot?#iefix') format('embedded-opentype'),
-         url('/fonts/Lato/lato-italic.woff2') format('woff2'),
-         url('/fonts/Lato/lato-italic.woff') format('woff'),
-         url('/fonts/Lato/lato-italic.ttf') format('truetype');
-    font-weight: 400;
-    font-style: italic;
-}
-@font-face {
-    font-family: 'latoregular';
-    src: url('/fonts/Lato/lato-regular.eot');
-    src: url('/fonts/Lato/lato-regular.eot?#iefix') format('embedded-opentype'),
-         url('/fonts/Lato/lato-regular.woff2') format('woff2'),
-         url('/fonts/Lato/lato-regular.woff') format('woff'),
-         url('/fonts/Lato/lato-regular.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'latosemibold';
-    src: url('/fonts/Lato/lato-semibold.eot');
-    src: url('/fonts/Lato/lato-semibold.eot?#iefix') format('embedded-opentype'),
-         url('/fonts/Lato/lato-semibold.woff2') format('woff2'),
-         url('/fonts/Lato/lato-semibold.woff') format('woff'),
-         url('/fonts/Lato/lato-semibold.ttf') format('truetype');
-    font-weight: 600;
     font-style: normal;
 }

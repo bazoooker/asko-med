@@ -1,37 +1,4 @@
 
-	// свайпер
-	var swiperMain = new Swiper('.swiper-container-main', {
-	  slidesPerView: 1,
-	  spaceBetween: 0,
-	  navigation: {
-	    nextEl: '.js-hero-slider-btn_next',
-	    prevEl: '.js-hero-slider-btn_prev',
-	  }	  
-	});
-
-    var swiperProd = new Swiper('.swiper-container-products', {
-      slidesPerView: 2,
-      spaceBetween: 20,
-      navigation: {
-        nextEl: '.js-products-slider-btn_next',
-        prevEl: '.js-products-slider-btn_prev',
-      }   
-    });
-
-    var swiperNews = new Swiper('.swiper-container-news', {
-      slidesPerView: 2,
-      spaceBetween: 20,
-      navigation: {
-        nextEl: '.js-news-slider-btn_next',
-        prevEl: '.js-news-slider-btn_prev',
-      },
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true
-      },   
-    });
-
-
 	/* МОДАЛЬНЫЕ ОКНА */
 $(document).ready(function(){        
     $(".callback-link").on('click', function(){

@@ -1,10 +1,16 @@
-@mixin flex-col {
+@mixin flex-col($wrap, $jusify-content, $align-items) {
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: column $wrap;
+
+    justify-content: $jusify-content;
+    align-items: $align-items;
 }
-@mixin flex-row {
+@mixin flex-row($wrap, $jusify-content, $align-items) {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row $wrap;
+
+    justify-content: $jusify-content;
+    align-items: $align-items;
 }
 
 @mixin pseudo {

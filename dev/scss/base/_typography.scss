@@ -1,48 +1,52 @@
 html {
-  font-size: 62.5%;
+    font-size: 62.5%;
+    font-family: 'ProximaNova', sans-serif;
+    font-weight: 400;
 }
 
-h1, h2 { font-size: 3rem; font-family: 'latoheavy'; color: $color_main; }
-h3 { font-size: 2.5rem; }
-h4 { font-size: 2.1rem; }
-h5 { font-size: 1.9rem; }
-h6 { font-size: 1.7rem; }
-
+body {
+    font-size: 1.4rem;
+}
 h1 {
-	margin: 3rem 0;
+    font-size: 6.1rem;
+    color: #fff;
+    text-shadow: -1px 0 1px rgba(0, 0, 0, .5);
 }
-
+h2 {
+    font-size: 2.4rem;
+    color: $color_main-dark;
+}
+// h3 { font-size: 2.5rem; }
+// h4 { font-size: 2.1rem; }
+// h5 { font-size: 1.9rem; }
+// h6 { font-size: 1.7rem; }
 section {
-	h1:first-child,
-	h2:first-child,
-	h3:first-child {
-		margin-top: 0;
-	}
+    h1:first-child, h2:first-child, h3:first-child {
+        margin-top: 0;
+    }
 }
-
-
-
-
-
-
 p, span {
-	color: #000;
-	font-size: 1.3rem;
-	line-height: 1.6rem;
+    color: #515151;
+    font-size: 1.4rem;
 }
-
-a {}
-  a:hover {}
-  a:visited {}
-  a:focus {}
-
+a {
+    color: $color_main;
+    text-decoration: underline;
+}
+	a:hover {
+	    text-decoration: none;
+	}
+	a:visited {
+	    color: #296d5c;
+	}
+	a:focus {
+	    color: #1b997b;
+	}
 table {}
 table tr {}
-
 ul {
-	padding-left: 1.4rem;
-
-	li {
-		margin-bottom: .5rem;	
-	}
+    padding-left: 1.4rem;
+    li {
+        margin-bottom: .5rem;
+    }
 }

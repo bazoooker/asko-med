@@ -28,13 +28,6 @@ html {
 body {
     height: 100%;
     margin: 0;
-    background-image: url(/img/bg/bg-main-page.png);
-    background-size: 86%;
-    font-family: 'latoregular', serif;
-    background-position: 100% 0%;
-    background-repeat: no-repeat;
-
-    
 }
 
 .page-wrapper {
@@ -52,11 +45,10 @@ body {
 }
 
 *, *:before, *:after {
-  box-sizing: border-box;;
+  box-sizing: border-box;
 }
 
 h1 {
-  // font-size: 2em;
   margin: 0.67em 0;
 }
 
@@ -98,6 +90,7 @@ samp {
 }
 small {
   font-size: 80%;
+  opacity: .8;
 }
 
 sub,

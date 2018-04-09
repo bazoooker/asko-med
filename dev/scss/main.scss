@@ -1,70 +1,31 @@
 
-@import "base/normalize";
-
 @import "assets/stylesheets/var";
 @import "assets/stylesheets/mixin";
+
+@import "base/normalize";
 
 @import "base/scale";
 @import "base/fonts";
 @import "base/typography";
 
-
 @import "block/grid.scss";
 @import "block/container.scss";
-@import "block/icons.scss";
 
 @import "block/page-header.scss";
-@import "block/contacts.scss";
-@import "block/page-nav.scss";
-@import "block/nav-link.scss";
-
-@import "block/slide-content.scss";
-@import "block/advantages.scss";
-@import "block/advantage.scss";
-@import "block/page-section.scss";
-
-@import "block/product-slider-item.scss";
-@import "block/news-slider-item.scss";
-
 @import "block/page-footer.scss";
+@import "block/page-nav.scss";
 
+@import "block/inner-page.scss";
 
-@import "block/news.scss";
+@import "block/icons.scss";
 @import "block/btn.scss";
 @import "block/btn-holder.scss";
 
-
-
-
-@import "block/sidebar.scss";
-@import "block/sidebar-photo.scss";
-@import "block/inner-page.scss";
-
-@import "block/catalog.scss";
-
+@import "block/accordeon.scss";
 @import "block/section-tabs.scss";
 
-@import "block/accordeon.scss";
-
-@import "block/product-category.scss";
-@import "block/product-list.scss";
-@import "block/product.scss";
-@import "block/product-group.scss";
-
-
-
-
-
+@import "block/hero.scss";
 
 @import "block/helper.scss";
-
 @import "block/modal.scss";
-@import "block/swiper.scss";
 
-
-
-// цвета
-// ==================
-
-// темно-красный
-// #801312

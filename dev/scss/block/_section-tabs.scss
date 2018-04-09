@@ -1,23 +1,87 @@
 
 /*BLOCK
 ================*/
-.section-tabs {
+// .section-tabs {
       /*поведение*/
-      display: flex;
+      // display: flex;
       /*стили*/
       // background-color: lightgray;   	  	
-}
+// }
+
+// .section-tabs_level-1 {
+// 	margin-top: -16rem;
+
+// 	.section-tabs__tabs {
+// 		ul > li {
+// 			padding: 7rem .5rem;
+// 		}
+// 	}
+// }
 
 // HORIZONTAL TABS
-.section-tabs_horizontal {
+.section-tabs.section-tabs_level-1 {
+	 // flex-flow: column nowrap;
+	 @include flex-col(nowrap, space-between, stretch);
+	 margin-top: -18rem;
+
+	.section-tabs__tabs {
+
+		/*стили*/
+		margin-bottom: 3.8rem;
+
+		& > ul {
+		      /*поведение*/
+		      display: flex;
+		      flex-flow: row nowrap;
+		      /*стили*/
+		      margin: 0;
+		      padding: 0;
+		      width: 100%;
+
+		  	& > li {
+			      /*поведение*/
+			      flex: 1 1 30%;
+			      /*стили*/
+			      background-color: $color_main;
+			      list-style: none;
+			      padding: 7rem .5rem;
+			      margin: 1px;
+			      cursor: pointer;
+			      text-align: center;
+
+			      font-size: 1.4rem;
+			      font-weight: 800;
+			      text-transform: uppercase;
+
+			      transition: 200ms;
+
+			      &:first-child {
+			      	margin-right: 2rem;
+			      }
+
+			      &.active {
+			      	background-color: #fff;
+			      	color: #fff;
+			      }
+
+			      &:hover {opacity: .85;}
+		    	}
+		}
+	}
+
+	.section-tabs__content {
+		/*поведение*/
+		flex: 1 1 100%;
+		/*стили*/
+		padding: 0;
+	}
+}
+
+// LEVEL 1
+.section-tabs.section-tabs_level-2 {
 	 flex-flow: column nowrap;
 
 	.section-tabs__tabs {
-		/*поведение*/
-
-		// display: flex;
-		// flex-flow: row nowrap;	
-		// flex: 1 1 90%;
 
 		/*стили*/
 		margin-bottom: 3.8rem;
@@ -66,52 +130,19 @@
 	}
 }
 
-.tab_sale {
-	position: relative;
-
-	&.active {
-		&:after {
-			transform: translateX(2rem) translateY(-2rem);
-		}
-	}
-
-	&:after {
-		@include pseudo;
-
-		right: -.6rem;
-		top:-.6rem;
-
-		width: 2.3rem;
-		height: 2.3rem;
-
-		background-image: url(/img/icons/icon-sale.png);
-		background-position: 50% 50%;
-		background-size: contain;
-		background-repeat: no-repeat;
-
-
-		transition: 150ms;
-	}
-}
-
-
-
-
-// VERTICAL TABS
-.section-tabs_vertical {
-	 flex-flow: row nowrap;
+// LEVEL 2
+.section-tabs_horizontal {
+	 flex-flow: column nowrap;
 
 	.section-tabs__tabs {
-		/*поведение*/
-		display: flex;
-		flex-flow: row nowrap;	
-		flex: 1 1 30%;
+
 		/*стили*/
+		margin-bottom: 3.8rem;
 
 		& > ul {
 		      /*поведение*/
 		      display: flex;
-		      flex-flow: column nowrap;
+		      flex-flow: row nowrap;
 		      /*стили*/
 		      margin: 0;
 		      padding: 0;
@@ -119,16 +150,24 @@
 
 		  	& > li {
 			      /*поведение*/
-			      flex: 1 1 100%;
+			      flex: 1 1 30%;
 			      /*стили*/
 			      // background-color: gray;
 			      list-style: none;
-			      padding: 20px;
+			      padding: 1.6rem .5rem;
 			      margin: 1px;
 			      cursor: pointer;
+			      text-align: center;
+
+			      font-size: 1.4rem;
+			      font-weight: 800;
+			      text-transform: uppercase;
+
+			      transition: 200ms;
 
 			      &.active {
 			      	background-color: orange;
+			      	color: #fff;
 			      }
 
 			      &:hover {opacity: .85;}
@@ -138,21 +177,13 @@
 
 	.section-tabs__content {
 		/*поведение*/
-		flex: 1 1 70%;
-
-		display: flex;
-		flex-flow: column nowrap;
-
+		flex: 1 1 100%;
 		/*стили*/
-		padding: 2rem;
-
-		.slide {
-			height: 100%;
-			display: block;
-			width: 100%;
-		}
+		padding: 0;
 	}
 }
+
+
 
 
 @media screen and (max-width: 768px) {
