@@ -83,7 +83,7 @@ $(".modal form").on('submit', function(e){
         console.log(sectionContent);
 
         // $(this).parent().parent().parent().find('.slide').each(function(i, elem) {
-        sectionContent.children('.tab-slide').each(function(i, elem) {
+        sectionContent.children('.slide').each(function(i, elem) {
             if (i == index) {
                 $(elem).slideDown(300);
             } else {
@@ -136,7 +136,7 @@ $(".modal form").on('submit', function(e){
         // обьявление контента
         var content = [];
         // сборка контента 
-        $('.section-tabs__content[rel=' + number + '] .tab-slide').each(function(i, elem) {
+        $('.section-tabs__content[rel=' + number + '] .slide').each(function(i, elem) {
             content[i] = elem.innerHTML;
         });            
         paint_dom(content, li_name, number);
