@@ -26,6 +26,11 @@
 
 @import "block/hero.scss";
 
+// form
+@import "nice-select/nice-select-prefixed";
+@import "block/search-params";
+@import "block/fancy-checkbox";
+
 @import "block/helper.scss";
 @import "block/modal.scss";
 

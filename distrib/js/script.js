@@ -1,3 +1,6 @@
+ $(document).ready(function() {
+  $('select').niceSelect();
+});
 
 	/* МОДАЛЬНЫЕ ОКНА */
 $(document).ready(function(){        
@@ -80,7 +83,7 @@ $(".modal form").on('submit', function(e){
         console.log(sectionContent);
 
         // $(this).parent().parent().parent().find('.slide').each(function(i, elem) {
-        sectionContent.children('.slide').each(function(i, elem) {
+        sectionContent.children('.tab-slide').each(function(i, elem) {
             if (i == index) {
                 $(elem).slideDown(300);
             } else {
@@ -113,12 +116,15 @@ $(".modal form").on('submit', function(e){
     // мини табы_____________
     // обьявление масив li
     var li_name = [];
+
     // расчет количества
-    $('.section-tabs .section-tabs__tabs').each(function(i, elem) {
-        elem.setAttribute('rel', i);
-        $('.section-tabs .section-tabs__tabs[rel=' + i + ']').parent().find('.section-tabs__content').attr('rel', i);
-        super_sbor(i);
-    });
+    
+    // $('.section-tabs .section-tabs__tabs').each(function(i, elem) {
+    //     elem.setAttribute('rel', i);
+    //     $('.section-tabs .section-tabs__tabs[rel=' + i + ']').parent().find('.section-tabs__content').attr('rel', i);
+    //     super_sbor(i);
+    // });
+
     // логика сборки 
     function super_sbor(number) {
         $('.section-tabs .section-tabs__tabs[rel=' + number + '] ul li').each(function(i, elem) {
@@ -130,7 +136,7 @@ $(".modal form").on('submit', function(e){
         // обьявление контента
         var content = [];
         // сборка контента 
-        $('.section-tabs__content[rel=' + number + '] .slide').each(function(i, elem) {
+        $('.section-tabs__content[rel=' + number + '] .tab-slide').each(function(i, elem) {
             content[i] = elem.innerHTML;
         });            
         paint_dom(content, li_name, number);
@@ -142,14 +148,14 @@ $(".modal form").on('submit', function(e){
     // логика кликов по mini_tab
     $('#mini_tab ul.cd-accordion-menu .has-children').click(function() {
         if ($(this).attr('class') == 'has-children active') {
-            $(this).children('.slide_children').slideUp(200);
+            $(this).find('.slide_children').slideUp(200);
             $(this).removeClass('active');
         } else {
             $('.slide_children').hide(200);
             console.log("hide me");
             $('#mini_tab ul.cd-accordion-menu .has-children.active').removeClass('active');
             $(this).addClass('active');
-            $(this).children('.slide_children').slideDown(200);
+            $(this).find('.slide_children').slideDown(200);
         }
     });
 
@@ -202,3 +208,6 @@ $(document).ready(function () {
     // $('.collapsable__btn').on("click", function() {
     //     $(this).toggleClass('untoggled');
     // });
+
+ 
+

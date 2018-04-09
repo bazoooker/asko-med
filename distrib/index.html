@@ -18,9 +18,12 @@
 
             <!-- styles -->
             <!-- <link href="css/swiper.min.css" rel="stylesheet"/>             -->
-            
+            <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
             <link href="css/main.css" rel="stylesheet"/>     <!-- gulp -->
             <link href="css/custom.css" rel="stylesheet"/>     <!-- css no preprocessor -->
+
+
       </head>
 
       <body>
@@ -84,7 +87,7 @@
                               <div class="section-tabs__content">
 
                                     <!-- PANEL -->
-                                    <article class="slide">
+                                    <article class="tab-slide">
 
                                           <!-- TABS CONTAINER. REQUIRED -->
                                           <div class="section-tabs section-tabs_horizontal section-tabs_level-2">
@@ -105,14 +108,58 @@
                                                 <div class="section-tabs__content">
 
                                                       <!-- PANEL -->
-                                                      <article class="slide">
+                                                      <article class="tab-slide">
 
-                                                            <div class="selecs container">
-                                                                  селекты селекты селекты селекты селекты селекты селекты селекты селекты селекты селекты 
+                                                            <div class="selects container">
+
+                                                                    <form action="" method="post" name="search-params" class="search-params"> 
+
+                                                                        <div class="search-params__region">
+                                                                            <label for="region">Выберите пункт вакцинации</label> 
+                                                                            <select name="region" id="region">
+                                                                                <option>Все регионы</option>
+                                                                                <option>Алтайский край</option>
+                                                                                <option>Другой регион</option>
+                                                                                <option>Замечательный регион</option>
+                                                                                <option>Прекрасно-солнечный регион</option>
+                                                                            </select>
+                                                                        </div>
+
+                                                                        <div class="search-params__checkboxes">
+                                                                            <label for="time" class="fancy-checkbox">
+                                                                                <input id="time" type="checkbox" checked="checked">
+                                                                                <span class="fancy-checkbox__checkmark"></span>
+                                                                                Круглосуточно
+                                                                            </label>
+                                                                            <label for="check-klesh" class="fancy-checkbox">
+                                                                                <input id="check-klesh" type="checkbox">
+                                                                                <span class="fancy-checkbox__checkmark"></span>
+                                                                                Прием клеща
+                                                                            </label>
+                                                                            <label for="adults"class="fancy-checkbox">
+                                                                                <input id="adults" type="checkbox">
+                                                                                <span class="fancy-checkbox__checkmark"></span>
+                                                                                Прием взрослых
+                                                                            </label>
+                                                                            <label for="children" class="fancy-checkbox">
+                                                                                <input id="children" type="checkbox">
+                                                                                <span class="fancy-checkbox__checkmark"></span>
+                                                                                Прием детей
+                                                                            </label>
+                                                                        </div>   
+
+                                                                                
+                                                                                  
+
+                                                                            
+
+                                                                    </form>
+
                                                             </div>
-                                                            <p>
-                                                              ПОСТАВИТЬ ИММУНОГЛУБУЛИН
-                                                            </p>
+                                                              
+
+
+
                                                             <p>
                                                                   <img style="width: 100%;" src="img/map.png" alt="">
                                                             </p>                                                          
@@ -120,7 +167,7 @@
                                                       </article>
 
                                                       <!-- PANEL -->
-                                                      <article class="slide" style="display:none;">
+                                                      <article class="tab-slide" style="display:none;">
                                                             <div class="selecs container">
                                                                   селекты селекты селекты селекты селекты селекты селекты селекты селекты селекты селекты 
                                                             </div>
@@ -139,7 +186,7 @@
                                     </article>
 
                                     <!-- PANEL -->
-                                    <article class="slide"  style="display:none;">
+                                    <article class="tab-slide"  style="display:none;">
                                           <!-- TABS CONTAINER. REQUIRED -->
                                           <div class="section-tabs section-tabs_horizontal section-tabs_level-2">
 
@@ -159,7 +206,7 @@
                                                 <div class="section-tabs__content">
 
                                                       <!-- PANEL -->
-                                                      <article class="slide">
+                                                      <article class="tab-slide">
 
                                                             <div class="selecs container">
                                                                   селекты селекты селекты селекты селекты селекты селекты селекты селекты селекты селекты 
@@ -174,7 +221,7 @@
                                                       </article>
 
                                                       <!-- PANEL -->
-                                                      <article class="slide" style="display:none;">
+                                                      <article class="tab-slide" style="display:none;">
                                                             <div class="selecs container">
                                                                   селекты селекты селекты селекты селекты селекты селекты селекты селекты селекты селекты 
                                                             </div>
@@ -293,10 +340,17 @@
             <div class="modal-content-copy">
             </div>
         </div>
+        
+          
+
         <!-- scripts -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+         <!-- <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> -->
         <script src="/js/modernizr.custom.62035.js" type="text/javascript"></script>
         <!-- <script src="js/swiper.min.js"></script> -->
+        <script src="/js/jquery.nice-select.min.js"></script>
         <script src="/js/script.js"></script>
+
+
     </body>
 </html>

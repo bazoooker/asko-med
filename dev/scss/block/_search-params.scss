@@ -1,0 +1,20 @@
+.search-params {
+	@include flex-row(nowrap, flex-start, stretch);
+	color: #515151;
+	font-size: 1.5rem;
+}
+.search-params__region {
+	@include flex-row(nowrap, flex-start, center);
+	margin-right: 2.5rem;
+	flex: 1 1 35%;
+
+	label {
+		margin-right: 2.5rem;
+	}
+}
+.search-params__checkboxes {
+	flex: 1 1 60%;
+	border: 0;
+	padding: 0;
+	@include flex-row(nowrap, flex-start, stretch);
+}
