@@ -1,0 +1,20 @@
+.download {
+	@include flex-row(nowrap, space-between, stretch);
+	height: 100%;
+	// margin: -2rem 0;
+}
+.download__tel {
+	flex: 1 1 50%;
+	margin-right: 2rem;
+
+	background-image: url(/img/mobile-phone.png );
+	background-size: contain;
+	background-position: center bottom;
+	background-repeat: no-repeat;
+}
+.download__info {
+	flex: 1 1 40%;
+	padding-top: 6rem;
+
+	@include flex-col(nowrap, space-between, stretch);
+}

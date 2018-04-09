@@ -1,0 +1,33 @@
+.download-links {
+	flex: 1 1 70%;
+
+	@include flex-row(nowrap, space-between, center);
+}
+.download-links__qr {
+	flex: 1 1 40%;
+	height: 100%;
+	background-image: url(/img/code.png);
+	background-size: 80%;
+	background-repeat: no-repeat;
+	background-position: 0% 50%;
+}
+.download-links__app {
+	flex: 1 1 40%;
+	height: 100%;
+	a {
+		display: block;
+		width: 100%;
+		height: 50%;
+		background-size: contain;
+		background-repeat: no-repeat;
+		
+		&:nth-child(1) {
+			background-image: url(/img/app.png);
+			background-position: 50% 80%;
+		}
+		&:nth-child(2) {
+			background-image: url(/img/app2.png);
+			background-position: 50% 20%;
+		}
+	}
+}

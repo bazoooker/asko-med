@@ -24,7 +24,14 @@
 @import "block/accordeon.scss";
 @import "block/section-tabs.scss";
 
-@import "block/hero.scss";
+@import "block/hero";
+@import "block/program";
+
+@import "block/about-section";
+@import "block/about-item";
+
+@import "block/download";
+@import "block/download-links";
 
 // form
 @import "nice-select/nice-select-prefixed";
