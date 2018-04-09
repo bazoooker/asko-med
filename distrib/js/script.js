@@ -66,15 +66,21 @@ $(".modal form").on('submit', function(e){
 
 // TABS
 // =================================
+
     $('.section-tabs .section-tabs__tabs ul li').click(function() {
-        $(this).parent().find('li.active').removeClass('active');
+        $(this).parent().children('li.active').removeClass('active');
+
         $(this).addClass('active');
-        var sectionTabs = $(this).parent().parent().parent().find('.section-tabs__content_type-small');
-        sectionTabs.removeClass('concatenated');
-        var arrowDirection = $('.collapsable__btn');
-        arrowDirection.addClass('untoggled');
+
+        var sectionTabs = $(this).parent().parent().parent().children('.section-tabs__content');
+
         var index = $(this).index();
-        $(this).parent().parent().parent().find('.slide').each(function(i, elem) {
+
+        var sectionContent = $(this).parent().parent().parent().children('.section-tabs__content');
+        console.log(sectionContent);
+
+        // $(this).parent().parent().parent().find('.slide').each(function(i, elem) {
+        sectionContent.children('.slide').each(function(i, elem) {
             if (i == index) {
                 $(elem).slideDown(300);
             } else {
@@ -92,16 +98,18 @@ $(".modal form").on('submit', function(e){
 
     // TABS SHOW/HIDE FULL CONTENT ON BUTTON CLICK
     // =================================
-    $(document).ready(function() {
-        $('.collapsable__btn').on("click", function() {
-            var sectionTabs = $(this).parent().find('.section-tabs__content_type-small');
-            if (sectionTabs.hasClass('concatenated')) {
-                sectionTabs.removeClass('concatenated');
-            } else {
-                sectionTabs.addClass('concatenated');
-            }
-        });
-    });
+
+    // $(document).ready(function() {
+    //     $('.collapsable__btn').on("click", function() {
+    //         var sectionTabs = $(this).parent().find('.section-tabs__content_type-small');
+    //         if (sectionTabs.hasClass('concatenated')) {
+    //             sectionTabs.removeClass('concatenated');
+    //         } else {
+    //             sectionTabs.addClass('concatenated');
+    //         }
+    //     });
+    // });
+
     // мини табы_____________
     // обьявление масив li
     var li_name = [];
