@@ -1,5 +1,8 @@
 .inner-page {
-	margin-top: 2.9rem; /* compensate for nav 5.8rem height outside header */	
+	.hero {
+		padding: 3rem 0 3rem 0;
+		height: auto;
+	}	
 }
 
 .inner-page__grid {
