@@ -207,30 +207,33 @@ $(document).ready(function () {
 // MAIN-MENU
 // =================================
 
-var menuIsOpen;
+var menuIsOpen; //for closing menu on "esc"
 
+// menu open/close
 function openMenu() {
     var topMenu = $('.menu');    
     if( topMenu.hasClass('menu_active') ) {
         topMenu.removeClass('menu_active');
         $('.overlay').fadeOut(300);
+        $('.page-wrapper').removeClass('h-no-scroll');
         menuIsOpen = false;
     }
     else {
         topMenu.addClass('menu_active');
         $('.overlay').fadeIn(300);
+        $('.page-wrapper').addClass('h-no-scroll');
         menuIsOpen = true;
     }
 }
 
-
+// triggers
 $(document).ready(function() {   
     $('.js-open-menu').click(openMenu);
     $('.js-menu-close').click(openMenu);
     $('.js-overlay').click(openMenu);    
 });
 
-
+// close on "esc"
 $(document).on( 'keydown', function ( e ) {
     if ( e.keyCode === 27 ) {
         if ( menuIsOpen == true ) {
@@ -239,10 +242,3 @@ $(document).on( 'keydown', function ( e ) {
         }
     }
 });
-
-    // $('.collapsable__btn').on("click", function() {
-    //     $(this).toggleClass('untoggled');
-    // });
-
- 
-
