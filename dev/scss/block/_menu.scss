@@ -23,7 +23,7 @@
 
 		.lead-links__item {
 			transform: translateX(0);
-			// opacity: 1;
+			opacity: 1;
 		}		
 	}
 }
@@ -44,7 +44,15 @@
 		color: #fff;
 		font-size: 1.6rem;
 		text-decoration: none;
-		margin-bottom: 2.1rem;
+		margin-bottom: .5rem;
+		margin-left: -1rem;
+		padding: 1rem;
+
+		transition: 300ms;
+		&:hover {
+			// text-decoration: underline;
+			background-color: darken($color_main, 5%);
+		}
 	}
 }
 
@@ -95,8 +103,8 @@
 		outline: 0;
 	}
 
-	// &:hover {
-	// 	transform: rotate(45deg) scale(1.5);
-	// }
+	&:hover {
+		transform: rotate(135deg) scale(1.3);
+	}
 
 }

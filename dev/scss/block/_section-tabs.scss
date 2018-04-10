@@ -54,6 +54,11 @@
 			      transition: 200ms;
 			      text-align: left;
 
+			      		&:hover {
+							// text-decoration: underline;
+							background-color: darken($color_main, 5%);
+						}
+
 				      p {
 				      	font-size: 2.4rem;
 				      	color: #fff;
@@ -85,6 +90,7 @@
 			      	&.tab_big:after {
 						// transform: translateY(3rem);
 						opacity: 1;
+
 			      	}
 					
 					

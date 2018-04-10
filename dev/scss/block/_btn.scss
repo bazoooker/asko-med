@@ -36,13 +36,14 @@
 
 	transition: 300ms;
 
-	// &:hover {
-	// 	color: $color_main;
+	&:hover {
+		background-color: lighten($color_main, 5%);
+	}
 
 	&:active {
 		border: 0;
 		outline: 0;
-		background-color: lighten( $color_main, 10%);
+		background-color: darken( $color_main, 10%);
 	}
 
 	// 	background: url(/img/icons/i-burger_mint.png) #fff;
