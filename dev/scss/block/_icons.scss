@@ -1,7 +1,7 @@
 .logo {
 	display: inline-block;
 	width: 27.2rem;
-	height: 100%;
+	
 	
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
@@ -15,6 +15,17 @@
 	}
 }
 
+.logo_header {
+	height: 100%;
+}
+.logo_footer {
+	height: 10.2rem;
+}
+.logo_menu {
+	height: 8rem;
+	background-size: contain;
+	background-position: 0% 50%;
+}
 
 /* icon layout */
 

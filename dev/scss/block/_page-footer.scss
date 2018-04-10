@@ -1,11 +1,16 @@
 .page-footer {
-	background-color: #3e3e3e;
+	background-color: $color_main;
+	padding: 5rem 0;
 
 	.container {
-		// @include flex-row(wrap, space-between, flex-start);
+		@include flex-row(wrap, space-between, flex-start);
 		justify-content: space-between;
 		align-items: center;
 
 		padding: 3rem 2rem 3rem 1rem;	
+	}
+
+	a {
+		color: #fff;
 	}
 }

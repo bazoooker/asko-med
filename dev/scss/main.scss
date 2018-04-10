@@ -8,21 +8,25 @@
 @import "base/fonts";
 @import "base/typography";
 
-@import "block/grid.scss";
-@import "block/container.scss";
+@import "block/grid";
+@import "block/container";
 
-@import "block/page-header.scss";
-@import "block/page-footer.scss";
-@import "block/page-nav.scss";
+@import "block/page-header";
+@import "block/page-footer";
 
-@import "block/inner-page.scss";
+@import "block/menu";
+@import "block/lead-links";
 
-@import "block/icons.scss";
-@import "block/btn.scss";
-@import "block/btn-holder.scss";
+@import "block/inner-page";
 
-@import "block/accordeon.scss";
-@import "block/section-tabs.scss";
+@import "block/icons";
+@import "block/btn";
+@import "block/btn-holder";
+
+@import "block/tel";
+
+@import "block/accordeon";
+@import "block/section-tabs";
 
 @import "block/hero";
 @import "block/program";
@@ -38,6 +42,7 @@
 @import "block/search-params";
 @import "block/fancy-checkbox";
 
-@import "block/helper.scss";
-@import "block/modal.scss";
+@import "block/helper";
+@import "block/modal";
+@import "block/overlay";
 

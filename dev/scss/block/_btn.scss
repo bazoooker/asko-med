@@ -28,6 +28,7 @@
 	background-position: 17% 48%;
 
 	border: 0;
+	outline: 0;
 
 	color: #fff;
 	font-size: 1.5rem;
@@ -37,6 +38,12 @@
 
 	// &:hover {
 	// 	color: $color_main;
+
+	&:active {
+		border: 0;
+		outline: 0;
+		background-color: lighten( $color_main, 10%);
+	}
 
 	// 	background: url(/img/icons/i-burger_mint.png) #fff;
 	// 	background-repeat: no-repeat;
