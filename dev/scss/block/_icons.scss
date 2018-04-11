@@ -112,19 +112,21 @@
 	    background-position: 0 50%;
 	}
 
-	.logo_menu {
-		height: 8rem;
-		background-size: contain;
-		background-position: 50% 50%;
-		margin-bottom: 4rem;
-	}
+	// .logo_menu {
+	// 	height: 8rem;
+	// 	background-size: contain;
+	// 	background-position: 50% 50%;
+	// 	margin-bottom: 4rem;
+	// }
 	.logo_footer {
 		margin-bottom: 6rem;
 	}
 }
 
-// @media screen and (max-width: 768px) {
-// 	.logo_menu {
-// 		margin: 0 0
-// 	}
-// }
+@media screen and (max-width: 614px) {
+	.logo_menu {
+		background-position: 50% 50%;
+		height: 11rem;
+	}
+}
+

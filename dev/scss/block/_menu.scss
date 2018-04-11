@@ -113,13 +113,21 @@
 
 @media screen and (max-width: 768px) {
 	.menu__header {
-		// @include flex-col(nowrap, center, center);
+		// height: 24rem;
+		padding: 2rem 5rem;
+	}
+	// 	.tel {
+	// 		display: block;
+	// 		margin-right: 4rem;
+	// 		text-align: center;
+	// 		margin: 0;
+	// 	}
+	// }
+}
+
+@media screen and (max-width: 614px) {
+	.menu__header {
+		@include flex-col(nowrap, space-between, center);
 		height: 24rem;
-		.tel {
-			display: block;
-			margin-right: 4rem;
-			text-align: center;
-			margin: 0;
-		}
 	}
 }

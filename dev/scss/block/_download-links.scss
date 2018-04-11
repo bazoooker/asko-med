@@ -2,6 +2,10 @@
 	flex: 1 1 70%;
 
 	@include flex-row(nowrap, space-between, center);
+
+	// padding-left: 50%;
+	width: 100%;
+	height: 100%;
 }
 .download-links__qr {
 	flex: 1 1 40%;
@@ -31,3 +35,82 @@
 		}
 	}
 }
+
+
+@media screen and (max-width: 1200px) {
+	.download-links {
+
+	}
+	.download-links__qr {
+		flex: 1 1 20%;
+		background-position: 0% 50%;
+	}
+	.download-links__app {
+		flex: 1 1 70%;
+
+			@include flex-row(nowrap, space-between, center);
+		a {
+			
+			&:nth-child(1) {
+				background-image: url(/img/app.png);
+				background-position: 50% 50%;
+				margin-right: 2rem;
+			}
+			&:nth-child(2) {
+				background-image: url(/img/app2.png);
+				background-position: 50% 50%;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.download-links {
+		@include flex-col(nowrap, space-between, center);
+	}
+	.download-links__qr {
+		flex: 1 1 50%;
+		width: 100%;
+		background-size: contain;
+		background-position: 50% 50%;
+	}
+	.download-links__app {
+		flex: 1 1 50%;
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.download-links {
+		height: 15rem;
+	}	
+	.download-links {
+		@include flex-row(nowrap, space-between, center);
+	}
+	.download-links__qr {
+		flex: 1 1 25%;
+		margin-right: 1.5rem;
+		background-position: 0% 50%;
+	}
+	.download-links__app {
+		flex: 1 1 70%;
+	}
+}
+
+// @media screen and (max-width: 1200px) {
+// 	.download-links__app {
+// 		a {
+// 			background-size: 70%;
+
+// 			&:nth-child(1) {
+// 				background-position: 00% 50%;
+// 			}
+// 			&:nth-child(2) {
+// 				background-position: 00% 50%;
+// 			}
+// 		}
+// 	}
+// 	.download-links__qr {
+// 		background-size: contain;
+// 	}
+// }

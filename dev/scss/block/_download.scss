@@ -1,7 +1,9 @@
+
+
 .download {
 	@include flex-row(nowrap, space-between, stretch);
-	height: 100%;
-	// margin: -2rem 0;
+	flex: 1 1 40%;
+	// padding: 2.5rem;
 }
 .download__tel {
 	flex: 1 1 50%;
@@ -17,4 +19,34 @@
 	padding-top: 6rem;
 
 	@include flex-col(nowrap, space-between, stretch);
+}
+
+@media screen and (max-width: 1200px) {
+	.download {
+		padding: 2.5rem;
+	}
+	.download__tel {
+		display: none;
+	}
+}
+
+
+@media screen and (max-width: 768px) {
+	.download__info	 {
+		padding-top: 0;
+	}
+	.download {
+		padding: 0;
+	}
+	.download__tel {
+		display: block;
+		flex: 1 1 20%;
+		background-position: 0 100%;
+	}
+}
+
+@media screen and (max-width: 599px) {
+	.download__tel {
+		display: none;
+	}
 }
