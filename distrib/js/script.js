@@ -195,6 +195,8 @@ $(document).ready(function () {
 })
     
 
+
+
 // MAIN-MENU
 // =================================
 
@@ -213,6 +215,7 @@ function openMenu() {
         topMenu.addClass('menu_active');
         $('.overlay').fadeIn(300);
         $('.page-wrapper').addClass('h-no-scroll');
+        slideMenuList();
         menuIsOpen = true;
     }
 }
@@ -233,3 +236,27 @@ $(document).on( 'keydown', function ( e ) {
         }
     }
 });
+
+
+
+// $(document).ready(function() {
+
+// function slideMenuList() {
+
+//     var navList = $('.js-menu-list-slidein a');
+//     i = 500;
+
+//     navList.each(function() {
+//         $(this).delay(i).css('color', 'red');
+//         i = i+600;
+//         console.log(i)
+//     });
+
+// }
+
+// });
+
+
+
+// добавить каждому пункту transition-delay
+// js-menu-list-slidein
