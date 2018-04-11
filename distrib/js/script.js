@@ -119,11 +119,11 @@ $(".modal form").on('submit', function(e){
 
     // расчет количества
     
-    // $('.section-tabs .section-tabs__tabs').each(function(i, elem) {
-    //     elem.setAttribute('rel', i);
-    //     $('.section-tabs .section-tabs__tabs[rel=' + i + ']').parent().find('.section-tabs__content').attr('rel', i);
-    //     super_sbor(i);
-    // });
+    $('.section-tabs .section-tabs__tabs').each(function(i, elem) {
+        elem.setAttribute('rel', i);
+        $('.section-tabs .section-tabs__tabs[rel=' + i + ']').parent().find('.section-tabs__content').attr('rel', i);
+        super_sbor(i);
+    });
 
     // логика сборки 
     function super_sbor(number) {

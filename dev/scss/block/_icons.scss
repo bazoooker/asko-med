@@ -102,3 +102,19 @@
 		background-image: url(/img/icons/icon-location.png);
 	}
 }
+
+
+
+@media screen and (max-width: 667px) {
+	.logo {
+		height: 45%;
+	    background-size: contain;
+	    background-position: 0 50%;
+	}
+
+	.logo_menu {
+		height: 100%;
+		background-size: contain;
+		background-position: 50% 50%;
+	}
+}

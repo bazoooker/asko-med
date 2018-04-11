@@ -13,3 +13,10 @@
 		margin-top: 0;
 	}
 }
+
+
+@media screen and (max-width: 1200px) {
+	.program__card {
+		display: none;
+	}
+}
