@@ -14,3 +14,14 @@
 		color: #fff;
 	}
 }
+
+@media screen and (max-width: 667px) {
+	.page-footer {
+		.container {
+			@include flex-col(nowrap, space-between, center);
+		}
+		.tel {
+			text-align: center;
+		}
+	}
+}

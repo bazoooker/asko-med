@@ -1,23 +1,141 @@
 .accordeon {
-	
-	&.opened {
-		.accordeon__label {
-			background-color: lightgray;
-		}		
+	@media screen and (min-width: 769px) {
+		display: none;
 	}
 }
-.accordeon__label {
-	padding: .4rem;
+
+
+.accordeon-item {
+	/*поведение*/
+  	flex: 1 1 30%;
+
+  	/*стили*/
+ 	// background-color: $color_main;
+ 	list-style: none;
+ 	// padding: 2.5rem 4rem 2.5rem 4rem;
+ 	margin-bottom: .1rem;
+ 	cursor: pointer;
+ 	text-align: center;
+
+ 	font-size: 1.4rem;
+ 	transition: 200ms;
+ 	text-align: left;
+
+ 	p {
+      	font-size: 2.4rem;
+      	color: #fff;
+      	font-weight: 300;
+      	text-transform: uppercase;
+
+      	margin-top: 0;
+      }
+      span {
+      	font-size: 1.4rem;
+      	color: #fff;
+      }
+
+      &:last-child {
+			margin-bottom: 0;
+		}
+		
+
+	&.opened {
+		& > .accordeon-item__label {
+			background-color: darken($color_main, 3%);
+			margin-bottom: 1px;
+
+			&:after {
+				transform: translateY(-50%) rotate(225deg);
+			}
+
+		}
+	}
+}
+.accordeon-item__label {
+	position: relative;
+	// padding: .4rem;
+	background-color: $color_main;
+	padding: 2.5rem 3.5rem 2.5rem 2rem;
 	font-size: 1.3rem;
-	text-transform: uppercase;
+	// text-transform: uppercase;
+	color: #fff;
 
 	cursor: pointer;
+
+	&:after {
+		@include pseudo;
+
+		right: 2rem;
+		top: 50%;
+		transform: translateY(-50%) rotate(45deg);
+
+		border-bottom: 1px solid #fff;
+		border-right: 1px solid #fff;
+
+		width: 1.5rem;
+		height: 1.5rem;
+
+		transition: 300ms;
+
+		// background-color: #fff;
+		// border-radius: 50%;
+	}
+
+
 }
-.accordeon__content {
-	padding: .5rem;
+.accordeon-item__content {
+	
 
-	overflow: hidden;
+	.accordeon-item__content {
+		padding: 1.5rem 0;
+	}
 
-	// max-height: 0;
-	// display: none;
+	.accordeon-item__label {
+		position: relative;
+		padding: 2.5rem 2rem 2.5rem 2rem;
+		background-color: darken($color_main, 6%) !important;
+		text-transform: uppercase;
+
+		&:after {
+			@include pseudo;
+
+			right: 2rem;
+			top: 50%;
+			transform: translateY(-50%) rotate(45deg);
+
+			border-bottom: 1px solid #fff;
+			border-right: 1px solid #fff;
+
+			width: 1.5rem;
+			height: 1.5rem;
+		}
+	}
+
+
+
+	.search-params {
+		@include flex-col(nowrap, flex-start, stretch);
+	}
+	
+	.search-params__region {
+		flex-direction: row-reverse;
+		justify-content: flex-end;
+		margin: 0 0 1rem 0;
+
+		.nice-select {
+			margin-right: 1.8rem;
+		}
+		.region {
+			margin: 0;
+		}
+	}
+	.search-params__checkboxes {
+		@include flex-col(nowrap, flex-start, stretch);
+		margin-bottom: 1rem;
+
+		.fancy-checkbox {
+			height: 4rem;
+			margin-bottom: .5rem;
+		}
+	}
 }

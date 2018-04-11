@@ -106,15 +106,25 @@
 
 
 @media screen and (max-width: 667px) {
-	.logo {
+	.logo_header {
 		height: 45%;
 	    background-size: contain;
 	    background-position: 0 50%;
 	}
 
 	.logo_menu {
-		height: 100%;
+		height: 8rem;
 		background-size: contain;
 		background-position: 50% 50%;
+		margin-bottom: 4rem;
+	}
+	.logo_footer {
+		margin-bottom: 6rem;
 	}
 }
+
+// @media screen and (max-width: 768px) {
+// 	.logo_menu {
+// 		margin: 0 0
+// 	}
+// }
