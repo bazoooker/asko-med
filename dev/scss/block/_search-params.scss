@@ -18,3 +18,28 @@
 	padding: 0;
 	@include flex-row(nowrap, flex-start, stretch);
 }
+
+
+@media screen and (min-width: 769px) and (max-width: 1300px) {
+	.search-params {
+		@include flex-row(wrap, flex-start, stretch);
+	}
+	.search-params__region {
+		@include flex-row(nowrap, center, center);
+		margin-right: 0;
+		flex: 1 1 100%;
+		height: 3.8rem;
+		margin: 1rem 0;
+		label {
+			margin-right: 4.5rem;
+		}
+	}
+	.search-params__checkboxes {
+		flex: 1 1 100%;
+		height: 3.8rem;
+		margin: 1rem 0;
+	}
+}		
+@media (max-width: 799px)  {
+
+}

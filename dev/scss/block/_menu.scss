@@ -37,7 +37,7 @@
 }
 .menu__nav {
 	@include flex-col(nowrap, flex-start, flex-start);
-	flex: 1 0 50%;
+	flex: 1 0 40%;
 	margin-bottom: 4rem;
 	padding-left: 1rem;
 
@@ -68,7 +68,7 @@
 
 	width: 4rem;
 	height: 4rem;
-	background-color: inherit;
+	background-color: transparent;
 	border: 0;
 	outline: 0;
 	cursor: pointer;

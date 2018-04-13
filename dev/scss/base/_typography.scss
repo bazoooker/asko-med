@@ -28,7 +28,7 @@ section {
         margin-top: 0;
     }
 }
-p, span {
+p, span, ul, li {
     color: #515151;
     font-size: 1.4rem;
 }
@@ -60,7 +60,7 @@ ul {
 //     }
 // }
 
-@media screen and (max-width: 413px) {
+@media screen and (max-width: 500px) {
     h1 {
         font-size: 4.5rem;
     }
