@@ -17,8 +17,9 @@
 .download__info {
 	flex: 1 1 40%;
 	padding-top: 6rem;
-
-	@include flex-row(nowrap, space-between, stretch);
+	
+	display: block;
+	// @include flex-row(wrap, space-between, stretch);
 }
 
 @media screen and (max-width: 1200px) {
@@ -35,6 +36,7 @@
 	.download__info	 {
 		padding-top: 0;
 		@include flex-row(wrap, space-between, stretch);
+
 	}
 	.download {
 		padding: 0;
@@ -49,5 +51,12 @@
 @media screen and (max-width: 599px) {
 	.download__tel {
 		display: none;
+	}
+
+	.download__info	 {
+		p {
+			flex: 1 1 100%;
+			text-align: center;
+		}
 	}
 }
