@@ -31,7 +31,7 @@
 	@include flex-row(nowrap, space-between, center);
 	width: 100%;
 	margin-bottom: 2rem;
-	padding: 2rem 0;
+	padding: 2rem 2rem;
 	height: 12rem;
 
 }
@@ -114,11 +114,17 @@
 
 }
 
+@media screen and (max-width: 1400px) {
+	.menu__header {
+		padding: 2rem 5rem;
+	}
+
+}
 
 @media screen and (max-width: 768px) {
 	.menu__header {
 		// height: 24rem;
-		padding: 2rem 5rem;
+		padding: 2rem 3rem;
 	}
 	// 	.tel {
 	// 		display: block;
@@ -133,5 +139,8 @@
 	.menu__header {
 		@include flex-col(nowrap, space-between, center);
 		height: 24rem;
+	}
+	.menu__nav {
+		flex: 1 1 100%;
 	}
 }

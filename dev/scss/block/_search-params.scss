@@ -4,12 +4,17 @@
 	font-size: 1.5rem;
 }
 .search-params__region {
-	@include flex-row(nowrap, flex-start, center);
+	@include flex-row(wrap, flex-start, center);
 	margin-right: 2.5rem;
 	flex: 1 1 35%;
 
 	label {
 		margin-right: 2.5rem;
+
+		@media screen and (max-width: 500px) {
+			display: block;
+			margin: 1rem 0;
+		}
 	}
 }
 .search-params__checkboxes {

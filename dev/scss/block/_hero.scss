@@ -16,6 +16,18 @@
 	}
 }
 
+@media screen and (max-width: 1199px) {
+    .hero {
+    	height: 70rem;
+
+    	background-attachment: scroll;
+
+    	h1 {
+			padding: 0 1rem;
+		}
+    }
+}
+
 @media screen and (max-width: 500px) {
     .hero {
     	height: 65.5rem;

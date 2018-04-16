@@ -1,6 +1,7 @@
 .page-footer {
 	background-color: $color_main;
 	padding: 5rem 0;
+	width: 100%;
 
 	.container {
 		@include flex-row(wrap, space-between, flex-start);

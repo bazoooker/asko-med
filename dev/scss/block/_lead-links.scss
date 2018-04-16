@@ -40,3 +40,9 @@
       	color: #fff;
       }
 }
+
+@media screen and (max-width: 614px) {
+	.lead-links {
+		flex: 1 1 100%;
+	}
+}

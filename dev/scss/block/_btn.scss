@@ -15,12 +15,17 @@
 }
 
 .btn_menu {
-	@include flex-row(nowrap, center, center);
+	display: table-cell;
+	vertical-align: middle;
+	text-align: right;
 
-	width: 11.2rem;
+	width: 9.5rem; /* для IE*/
+
+	flex: 0 0 9.5rem;
 	height: 4.4rem;
 
-	padding-left: 3rem;
+	padding: 0 1.5rem;
+	margin-left: 1rem;
 
 	background: url(/img/icons/i-burger_white.png) $color_main;
 	background-repeat: no-repeat;
