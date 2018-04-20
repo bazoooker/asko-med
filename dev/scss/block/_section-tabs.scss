@@ -8,7 +8,7 @@
 	& > .section-tabs__tabs {
 
 		/*стили*/
-		margin-bottom: 3.8rem;
+		margin-bottom: 1.8rem;
 		padding: 0;
 
 		& > ul {
@@ -264,6 +264,10 @@
     	.section-tabs__tabs > ul {
     		display: none !important;
     	}
+
+	.section-tabs.section-tabs_level-1 {
+		margin-top: -16rem;
+	}
 }
 
 

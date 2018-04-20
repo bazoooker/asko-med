@@ -63,6 +63,10 @@
 
 	cursor: pointer;
 
+	& > span {
+		color: #fff;
+	}
+
 	&:after {
 		@include pseudo;
 
@@ -85,6 +89,14 @@
 
 }
 .accordeon-item__content {
+		
+	// by default accrodeons are open on desktops	
+	display: block;
+	
+	// by default accrodeons are closed on mobile
+	@media screen and (max-width: 768px) {
+		display: none;
+	}
 	
 
 	.accordeon-item__content {
@@ -121,11 +133,16 @@
 	.search-params__region {
 		flex-direction: row-reverse;
 		justify-content: flex-end;
-		margin: 1rem 0 1rem 0;
+		margin: 2rem 0 0 0;
 		flex: 1 1 100%;
+
+		@media screen and (max-width: 500px) {
+			justify-content: center;
+		}
 
 		.nice-select {
 			margin-right: 1.8rem;
+			flex: 1 1 50%;
 
 			@media screen and (max-width: 500px) {
 				flex: 1 1 100%;
@@ -149,13 +166,17 @@
 			// display: block;
 			flex: 1 1 40%;
 			height: 4rem;
-			margin: 0 0 .5rem 0;
+			margin: 1.5rem 0 0 0;
 
 			@media screen and (max-width: 500px) {
 				flex: 1 1 100%;
 			}
 		}
 	}
+
+	
+
+
 }
 
 

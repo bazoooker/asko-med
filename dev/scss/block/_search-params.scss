@@ -2,7 +2,7 @@
 	@include flex-row(nowrap, flex-start, stretch);
 	color: #515151;
 	font-size: 1.5rem;
-	// margin: 2rem 0;
+	margin: 0 0 2rem 0;
 }
 .search-params__region {
 	@include flex-row(wrap, flex-start, center);
