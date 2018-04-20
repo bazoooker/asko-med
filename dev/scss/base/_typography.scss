@@ -2,6 +2,7 @@ html {
     font-size: 62.5%;
     font-family: 'ProximaNova', sans-serif;
     font-weight: 400;
+    color: #515151;
 }
 
 body {
@@ -14,12 +15,16 @@ h1 {
     font-weight: 800;
 }
 h2 {
-    font-size: 2.4rem;
+    font-size: 2.6rem;
     font-weight: 300;
     color: $color_main-dark;
 }
 
-// h3 { font-size: 2.5rem; }
+h3 { 
+    font-size: 2rem;
+    color: $color_main-dark;
+    font-weight: 300;
+ }
 // h4 { font-size: 2.1rem; }
 // h5 { font-size: 1.9rem; }
 // h6 { font-size: 1.7rem; }
@@ -28,7 +33,7 @@ section {
         margin-top: 0;
     }
 }
-p, span, ul, li {
+p, span, ul, li,  {
     color: #515151;
     font-size: 1.4rem;
 }

@@ -1,4 +1,5 @@
 .accordeon {
+	// margin-top: 3rem;
 	@media screen and (min-width: 769px) {
 		display: none;
 	}
@@ -29,7 +30,7 @@
 
       	margin-top: 0;
       }
-      span {
+      & > span {
       	font-size: 1.4rem;
       	color: #fff;
       }
@@ -120,7 +121,7 @@
 	.search-params__region {
 		flex-direction: row-reverse;
 		justify-content: flex-end;
-		margin: 0 0 1rem 0;
+		margin: 1rem 0 1rem 0;
 		flex: 1 1 100%;
 
 		.nice-select {

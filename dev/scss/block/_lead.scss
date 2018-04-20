@@ -1,0 +1,18 @@
+.lead {
+    padding: 3rem 6rem;
+    margin: 2rem 0;
+    background-color: #d4efe9;
+    border-left: 2px solid #1aac8c;
+
+    strong {
+    	color: $color_main-dark;
+    	font-size: 1.7rem;
+    }
+
+    p:first-child {
+    	margin-top: 0;
+    }
+    p:last-child {
+    	margin-bottom: 0;
+    }
+}

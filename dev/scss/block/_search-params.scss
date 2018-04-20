@@ -2,6 +2,7 @@
 	@include flex-row(nowrap, flex-start, stretch);
 	color: #515151;
 	font-size: 1.5rem;
+	// margin: 2rem 0;
 }
 .search-params__region {
 	@include flex-row(wrap, flex-start, center);
@@ -28,6 +29,7 @@
 @media screen and (min-width: 769px) and (max-width: 1300px) {
 	.search-params {
 		@include flex-row(wrap, flex-start, stretch);
+
 	}
 	.search-params__region {
 		@include flex-row(nowrap, center, center);
@@ -45,6 +47,8 @@
 		margin: 1rem 0;
 	}
 }		
-@media (max-width: 799px)  {
 
+
+.search-params__region_centered {
+	@include flex-row(wrap, center, center);
 }
