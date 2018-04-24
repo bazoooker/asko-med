@@ -1,8 +1,12 @@
 .lead {
-    padding: 3rem 6rem;
+    padding: 3rem 4.5rem;
     margin: 2rem 0;
     background-color: #d4efe9;
     border-left: 2px solid #1aac8c;
+
+    @media screen and (max-width: 768px) {
+        padding: 2.5rem 3rem;
+    }
 
     strong {
     	color: $color_main-dark;

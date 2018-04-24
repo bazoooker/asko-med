@@ -1,30 +1,44 @@
 .logo {
 	display: inline-block;
 	width: 27.2rem;
+	font-size: 2.5rem;
+	font-weight: 300;
+	text-decoration: none;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
 	
-	
-	background-repeat: no-repeat;
-	background-position: 50% 50%;
+	// background-repeat: no-repeat;
+	// background-position: 50% 50%;
 
 	transition: 200ms;
-	background-image: url(/img/logo-ret.png); 
-	background-size: 22.6rem;
+	// background-image: url(/img/logo-ret.png); 
+	// background-size: 22.6rem;
 
 	&:hover {
 		opacity: .75;
 	}
+
+	&:visited {
+		color: #fff;
+	}
 }
 
+.page-header__nav .logo_header,
 .logo_header {
 	height: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    font-size: 2.5rem;
 }
 .logo_footer {
-	height: 10.2rem;
+	height: 11.2rem;
+
 }
 .logo_menu {
 	height: 8rem;
-	background-size: contain;
-	background-position: 0% 50%;
+	color: #fff;
+	// background-size: contain;
+	// background-position: 0% 50%;
 }
 
 /* icon layout */
@@ -103,7 +117,12 @@
 	}
 }
 
-
+@media screen and (max-width: 1024px) {
+	.page-header__nav .logo_header,
+	.logo_header {
+		font-size: 2rem;
+	}
+}
 
 @media screen and (max-width: 667px) {
 	.logo_header {
@@ -123,10 +142,24 @@
 	}
 }
 
+@media screen and (max-width: 667px) {
+	.logo_footer {
+		text-align: center;
+	}
+}
+
 @media screen and (max-width: 614px) {
 	.logo_menu {
 		background-position: 50% 50%;
 		height: 11rem;
+	}
+	.page-header__nav .logo_header,
+	.logo_header {
+		font-size: 1.8rem;
+	}
+	.logo_menu,
+	.logo_footer {
+		text-align: center;
 	}
 }
 
