@@ -225,3 +225,20 @@ footer,header,hgroup,menu,nav,section {
 }
 
 
+.gmnoprint {
+  display: none;
+}
+
+
+
+@media screen and (min-width: 568px) and (max-width: 768px) {
+  .popup {
+    max-width: 350px;
+  }
+}
+
+@media screen and (min-width: 1px) and (max-width: 567px) {
+  .popup {
+    max-width: 256px;
+  }
+}
