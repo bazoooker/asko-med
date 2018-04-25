@@ -238,6 +238,48 @@ $(document).on( 'keydown', function ( e ) {
 });
 
 
+// BTN-GROUP
+
+// показать карту
+function showMap() {
+    var isActive = $('.showtype').hasClass('showtype_active-map');
+    var btnGroup = $('.showtype');
+
+    if (isActive) {
+        console.log('break')
+        return false;
+    }
+    else {
+        btnGroup.removeClass('showtype_active-list');
+        btnGroup.addClass('showtype_active-map');
+        $('.show-list').slideDown(300);
+        $('.map').slideUp(300);
+    } 
+}
+
+// показать список
+function showList() {
+    var isActive = $('.showtype').hasClass('showtype_active-list');
+    var btnGroup = $('.showtype');
+
+    if (isActive) {
+        console.log('break')
+        return false;
+    }
+    else {
+        btnGroup.removeClass('showtype_active-map');
+        btnGroup.addClass('showtype_active-list');
+        $('.map').slideDown(300);
+        $('.show-list').slideUp(300);
+    } 
+}
+
+
+// triggers
+$(document).ready(function() {   
+    $('#showtype_map').click(showMap);    
+    $('#showtype_list').click(showList);    
+});
 
 // $(document).ready(function() {
 

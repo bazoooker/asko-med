@@ -148,7 +148,20 @@
                                                                 <form action="" method="post" name="search-params" class="search-params"> 
 
                                                                     <div class="search-params__region">
-                                                                        <label for="region">Выберите пункт вакцинации</label> 
+                                                                        <!-- <label for="region">Выберите пункт вакцинации</label>  -->
+
+                                                                        <div class="showtype showtype_active-map">
+
+                                                                          <div action="#" id="showtype_map" class="showtype__btn">
+                                                                            <span class="showtype__text">Картой</span>
+                                                                          </div>
+
+                                                                          <div action="#" id="showtype_list" class="showtype__btn">
+                                                                            <span class="showtype__text">Списком</span>
+                                                                          </div>
+
+                                                                        </div>
+
                                                                         <select name="region" id="region">
                                                                             <option>Все регионы</option>
                                                                             <option>Алтайский край</option>
@@ -200,7 +213,11 @@
                                                                 <form action="" method="post" name="search-params" class="search-params"> 
 
                                                                     <div class="search-params__region">
-                                                                        <label for="region">Выберите пункт вакцинации</label> 
+                                                                        <!-- <label for="region">Выберите пункт вакцинации</label>  -->
+                                                                        <div class="showtype">
+                                                                          <button id="showtype_map" class="showtype__btn">Картой</button>
+                                                                          <button id="showtype_list" class="showtype__btn">Списком</button>
+                                                                        </div>
                                                                         <select name="region" id="region">
                                                                             <option>Все регионы</option>
                                                                             <option>Алтайский край</option>

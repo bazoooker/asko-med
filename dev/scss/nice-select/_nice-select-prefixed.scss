@@ -2,7 +2,7 @@
 $font_size: 14px !default;
 $font_size_small: 12px !default;
 
-$input_border_radius: 5px !default;
+$input_border_radius: 0px !default;
 $input_height: 38px !default;
 $input_height_small: 36px !default;
 $dropdown_padding: 18px !default;
@@ -88,6 +88,7 @@ $arrow_color: $gray !default;
       // width: 100%;
       width: auto;
       opacity: 1;
+      margin-left: 0;
       pointer-events: auto;
       -webkit-transform: scale(1) translateY(0);
           -ms-transform: scale(1) translateY(0);
