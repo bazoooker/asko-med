@@ -280,8 +280,8 @@ function showList() {
 
 // triggers
 $(document).ready(function() {   
-    $('.showtype_map').click(showMap);    
-    $('.showtype_list').click(showList);    
+    $('#showtype_map').click(showMap);    
+    $('#showtype_list').click(showList);    
 });
 
 // $(document).ready(function() {

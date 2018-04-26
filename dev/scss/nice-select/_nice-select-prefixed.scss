@@ -204,3 +204,11 @@ $arrow_color: $gray !default;
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  .nice-select {
+    .current {
+      width: 100%;
+    }
+  }
+}
